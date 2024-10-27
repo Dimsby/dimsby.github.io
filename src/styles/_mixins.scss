@@ -1,0 +1,83 @@
+@use 'variables';
+@use 'sass:map';
+
+// responsive widths
+
+@mixin min-width($breakpoint) {
+    @if map-has-key(variables.$breakpoints, $breakpoint) {
+        @media (min-width: map-get(variables.$breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+}
+
+@mixin max-width($breakpoint) {
+    @if map-has-key(variables.$breakpoints, $breakpoint) {
+        @media (max-width: map-get(variables.$breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+}
+
+@mixin min-max-width($bp_min, $bp_max) {
+    @if map-has-key(variables.$breakpoints, $bp_min) and map-has-key(variables.$breakpoints, $bp_max) {
+        @media ((min-width: map-get(variables.$breakpoints, $bp_min)) and (max-width: map-get(variables.$breakpoints, $bp_max))) {
+            @content;
+        }
+    }
+}
+
+@mixin set-max-width($breakpoint) {
+    @if map-has-key(variables.$container-max-widths, $breakpoint) {
+        @include min-width($breakpoint) {
+            max-width: map-get(variables.$container-max-widths, $breakpoint)
+        }
+    }
+}
+
+// grid
+
+@mixin create-grid-class($breakpoint: null) {
+    $infix: if($breakpoint ==null, '', '-#{$breakpoint}');
+
+    @for $i from 1 through variables.$columns {
+        .col#{$infix}-#{$i} {
+            grid-column-end: span $i;
+        }
+
+        .col-offset#{$infix}-#{$i} {
+            grid-column-start: $i + 1;
+        }
+
+        .row#{$infix}-#{$i} {
+            grid-row-end: span $i;
+        }
+
+        .row-offset#{$infix}-#{$i} {
+            grid-row-start: $i + 1;
+        }
+    }
+}
+
+@mixin create-grid-classes() {
+    @include create-grid-class(); // for col-{1-12}
+    // for col-{sm-xl}-{1-12}
+    @each $breakpoint, $width in variables.$breakpoints {
+        @media (min-width: $width) {
+            @include create-grid-class($breakpoint);
+        }
+    }
+}
+
+@mixin make-grid() {
+    display: grid;
+    grid-template-columns: repeat(variables.$columns, 1fr);
+    grid-gap: variables.$gap;
+    gap: variables.$gap;    
+}
+
+@mixin make-container() {
+    @each $key, $breakpoint in variables.$breakpoints {
+        @include set-max-width($key)
+    }
+}

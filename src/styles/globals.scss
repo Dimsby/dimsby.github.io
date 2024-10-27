@@ -1,0 +1,131 @@
+@use 'reset';
+@use 'variables';
+@use 'mixins';
+@use 'sass:map';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: variables.$colors-font-main;
+    background: variables.$colors-bg;
+    overflow: hidden;
+    font-family: var(--font-common), sans-serif;
+    font-size: 14px;
+    margin: 0;
+
+    @include mixins.min-width(md) {
+        font-size: 16px;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-header), sans-serif;
+}
+
+.container {
+    width: 100%;
+    @include mixins.make-container;
+}
+
+@include mixins.create-grid-classes;
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    height: 100vh;
+
+    .content {
+        flex: 1;
+        padding: 15px;
+
+        @include mixins.min-width(md) {
+            
+        }        
+    }
+
+    .sidebar {
+        order: -1;
+        display: flex;
+        flex-direction: row;
+        background: #232222;    
+        z-index: 10;  
+        
+        @include mixins.max-width(md) {
+            padding: 20px;
+        }
+
+    }
+
+    @include mixins.min-width(md) {
+        flex-direction: row;
+
+        .content {
+            flex: 1;
+            margin: 30px 0;
+        }
+
+        .sidebar {
+            order: inherit;
+            flex: 0 0 150px;
+            flex-direction: column;
+            padding: 30px 0;
+        }
+    }
+
+}
+
+.githubLink {
+    text-align: right;
+
+    @include mixins.max-width(sm) {
+        margin-top: 6px;
+    }
+
+    @include mixins.max-width(md) {
+        margin-left: 50px;
+    }
+
+
+    img {
+        height: 20px;
+        width: 20px;
+        align-self: center;
+    }
+}
+
+
+.swiper {
+    height: 100vh;
+}
+
+.swiper-slide {
+    display: flex !important;
+}
+
+.swiper__fullscreen {
+    .swiper-slide {
+        align-items: center;
+    }
+}
+
+.swiper__multiple {}
+
+.swiper-initialized {
+    overflow: visible !important;
+}
+
+.swiper-pagination-progressbar {
+    position: fixed !important;
+    left: 0 !important;
+}

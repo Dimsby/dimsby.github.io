@@ -1,0 +1,13 @@
+@use 'mixins';
+
+.logo {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: right;
+    align-self: center;
+
+    @include mixins.min-width(md) {
+        align-self: flex-start;
+        font-size: 1.25rem;
+    }     
+}

@@ -1,0 +1,65 @@
+@use 'mixins';
+
+.page {
+
+    height: 100%;
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        text-transform: uppercase;
+        width: 100%;
+        font-weight: 300;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    section {
+        width: 100%;
+        @include mixins.make-grid();
+
+        @include mixins.max-width(sm) {
+            gap: 10px;
+        }  
+        
+        ul {
+            padding-left: 20px;
+        }
+    }
+
+    .sectionFeature {
+        h1 {
+            align-self: center;  
+            @include mixins.min-width(sm) {
+                align-self: self-end;
+                font-size: 3.5rem;
+            }        
+            @include mixins.min-width(lg) {
+                font-size: 6rem;
+                line-height: 6rem;
+            }                 
+        }
+
+        img {
+            border-radius: 25px;
+            filter: url(#ambilight);
+            margin-top: auto;
+        }
+
+        p {
+            text-align: left;
+            align-items: self-start;
+        }
+    }
+
+
+
+}

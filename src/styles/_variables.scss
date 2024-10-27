@@ -1,0 +1,22 @@
+$colors-bg: #232222;
+$colors-font-main: #fff;
+
+$columns: 12;
+$gap: 30px;
+
+$breakpoints: (
+    sm: 600px, 
+    md: 1024px, 
+    lg: 1600px, 
+    xl: 2048px 
+);
+
+$container-max-widths: (
+    sm: 720px,
+    md: 930px,
+    lg: 1335px,
+    xl: 1800px
+);
+
+$width_main: 75%;
+$width_sidebar: 25%;
