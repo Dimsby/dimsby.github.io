@@ -44,7 +44,7 @@ export default function Home() {
         className="swiper__fullscreen"
         style={{
           '--swiper-pagination-color': '#444'
-        }}
+        } as React.CSSProperties}
       >
         <SwiperSlide>
           <section className={styles.sectionFeature}>

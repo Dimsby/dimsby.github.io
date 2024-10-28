@@ -22,7 +22,7 @@ export default function Page() {
                 className="swiper__multiple"
                 style={{
                     '--swiper-pagination-color': '#444'
-                }}
+                } as React.CSSProperties}
             >
                 <SwiperSlide>
                     <Well imageSrc='/img/projects/gpu_1_preview.jpg'>
