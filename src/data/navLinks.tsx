@@ -1,5 +1,3 @@
-import React from "react";
-
 const navLinks = [
   { href: "/", title: "Обо мне" },
   { href: "/projects", title: "Проекты" },

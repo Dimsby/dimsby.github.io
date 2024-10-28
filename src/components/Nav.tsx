@@ -11,8 +11,9 @@ import { usePathname } from "next/navigation";
 const Nav = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const handleClick = () => setIsOpen(!isOpen);
+  const pathName = usePathname()
 
-  useEffect(() => setIsOpen(false), [usePathname()]);
+  useEffect(() => setIsOpen(false), [pathName]);
 
   return (
     <div className={styles.nav + ` ${isOpen ? styles.nav_active : ''}`}>

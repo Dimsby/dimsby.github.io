@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import { Jost } from 'next/font/google'
-import { Inter } from 'next/font/google'
 import "../styles/globals.scss";
-import Nav from "@/components/Nav";
-import Logo from "@/components/Logo";
 import Sidebar from "@/components/Sidebar";
-import EffectAmbilight from "@/components/EffectAmbilight";
 
 const fontCommon = Jost({
     subsets: ['latin', 'cyrillic'],

@@ -6,9 +6,9 @@ import styles from "../styles/page.module.scss";
 import imgPortrait from "@public/img/portrait.jpg"
 import EffectAmbilight from "@/components/EffectAmbilight";
 
-import React, { useRef, useState } from 'react';
+import React from 'react';
 
-import { RevealWrapper } from 'next-reveal'
+//import { RevealWrapper } from 'next-reveal'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -147,8 +147,8 @@ export default function Home() {
               <h2>НИУ МЭИ (СФ)</h2>
               <h3>Факультет компьютерных технологий и электроники</h3>
               <p>2006 — 2012</p>
-              <p>В 2010 присвоена степень бакалавра техники и технологи по направлению "Информатика и вычислительная техника".</p>
-              <p>В 2012 присвоена степень инженера по спецальности "Вычислительные машины, косплексы, системы и сети".</p>
+              <p>В 2010 присвоена степень бакалавра техники и технологи по направлению &quot;Информатика и вычислительная техника&quot;.</p>
+              <p>В 2012 присвоена степень инженера по спецальности &quot;Вычислительные машины, косплексы, системы и сети&quot;.</p>
             </div>
           </section>
 
