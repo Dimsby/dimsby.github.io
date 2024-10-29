@@ -65,7 +65,7 @@ export default function Page() {
                     <Well imageSrc='/img/projects/codeda_1_preview.jpg' even>
                         <h1>Codeda</h1>
                         <h2>Bootstrap, SCSS, jQuery, Webpack</h2>
-                        <p>2021. Разработал статичный лэндинг на Bootstrap. Сборка через Webpack.
+                        <p>2021. Верстка статичный лэндинга на Bootstrap. Сборка через Webpack.
                             Для ускорения загрузки сначала загружаются только стили для первого видимого экрана.
                             Также с помощью сборки стилей SCSS через Webpack грузятся только нужные модули Bootstrap.
                             Применен HtmlWebpackPlugin для повторяющихся частей страницы
@@ -77,7 +77,7 @@ export default function Page() {
                     <Well imageSrc='/img/projects/avcore_1_preview.jpg'>
                         <h1>Avcore</h1>
                         <h2>Bootstrap, SCSS, jQuery, Webpack</h2>
-                        <p>2021. Разработал лэндинг на Wordpress + Bootstrap.
+                        <p>2021. Верстка лэндинг на Wordpress + Bootstrap.
                             Для сборки использована та же схема, что и в Codeda - оптимизация загрузки стилей и модулей Webpack
                         </p>
                         <p><a href="https://github.com/Dimsby/lnd_webpack" target="_blank">Github</a></p>
