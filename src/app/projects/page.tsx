@@ -56,9 +56,7 @@ export default function Page() {
                         <p>2019 - 2022. Разработал и поддерживал базу данных имен найденных погибших. Для бэкенда использовал Laravel+Mysql.
                             В публичной части интерфейс на blade шаблонах Laravel и js без фреймворков. Каждая страница базы оптимизирована для поисковых систем.
                             В приватной части интерфейс на Vue </p>
-                        <p><a href="https://github.com/Dimsby/centd_base" target="_blank">Github</a>,
-                            <a href="https://xn----ftbcc6ajjnr1b.xn--p1ai/" target="blank">центр-долг.рф</a>,
-                            <a href="https://xn----ftbcc6ajjnr1b.xn--p1ai/base" target="blank">База установленных имен</a>
+                        <p><a href="https://github.com/Dimsby/centd_base" target="_blank">Github</a>, <a href="https://xn----ftbcc6ajjnr1b.xn--p1ai/" target="blank">центр-долг.рф</a>, <a href="https://xn----ftbcc6ajjnr1b.xn--p1ai/base" target="blank">База установленных имен</a>
                         </p>
                     </Well>
                 </SwiperSlide>
