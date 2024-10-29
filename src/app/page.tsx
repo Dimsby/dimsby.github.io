@@ -41,7 +41,7 @@ export default function Home() {
         mousewheel={{ 'enabled': true }}
         pagination={{ type: "progressbar" }}
         modules={[Mousewheel, Pagination]}
-        className="swiper__fullscreen"
+        className="swiper__fullscreen"      
         style={{
           '--swiper-pagination-color': '#444'
         } as React.CSSProperties}
@@ -147,8 +147,8 @@ export default function Home() {
               <h2>НИУ МЭИ (СФ)</h2>
               <h3>Факультет компьютерных технологий и электроники</h3>
               <p>2006 — 2012</p>
-              <p>В 2010 присвоена степень бакалавра техники и технологи по направлению &quot;Информатика и вычислительная техника&quot;.</p>
-              <p>В 2012 присвоена степень инженера по спецальности &quot;Вычислительные машины, косплексы, системы и сети&quot;.</p>
+              <p>В 2010 присвоена степень бакалавра техники и технологии по направлению &quot;Информатика и вычислительная техника&quot;.</p>
+              <p>В 2012 присвоена степень инженера по специальности &quot;Вычислительные машины, комплексы, системы и сети&quot;.</p>
             </div>
           </section>
 
