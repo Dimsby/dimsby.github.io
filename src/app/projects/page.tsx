@@ -34,7 +34,7 @@ export default function Page() {
                         </p>
                         <h2>Laravel</h2>
                         <p>2022 - 2024. В составе команды переносил проект на REST API Laravel. Поддержка окончена.</p>
-                        <p><a href="https://gpu.travel">gpu.travel</a></p>
+                        <p><a href="https://gpu.travel" target="_blank">gpu.travel</a></p>
                     </Well>
                 </SwiperSlide>
 
