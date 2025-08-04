@@ -41,7 +41,7 @@ export default function Home() {
         mousewheel={{ 'enabled': true }}
         pagination={{ type: "progressbar" }}
         modules={[Mousewheel, Pagination]}
-        className="swiper__fullscreen"
+        className="swiper__fullscreen"      
         style={{
           '--swiper-pagination-color': '#444'
         } as React.CSSProperties}
@@ -95,9 +95,25 @@ export default function Home() {
           <section>
             <h1 className="col-12">Опыт работы</h1>
             <div className="col-12">
+              <h2>Yamdiet</h2>
+              <h3>Fullstack Developer</h3>
+              <p>Декабрь 2024 — по настоящее время</p>
+            </div> 
+            <div className="col-12 col-sm-6">
+              <h3>Чем занимаюсь</h3>
+              <ul>
+                <li>Поддержка лэндингов компании, верстка обновлений дизайна (php)</li>
+                <li>Разработка личного кабинета (vue 3)</li>
+              </ul>
+            </div>
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+          <section>
+            <div className="col-12">
               <h2>AKLABS <small>(ИП Крамаренко АЛ)</small></h2>
               <h3>Программист</h3>
-              <p>Декабрь 2013 — Декабрь 2022</p>
+              <p>Декабрь 2013 — Август 2024</p>
             </div>
             <div className="col-12 col-sm-6">
               <h3>Чем занимался</h3>
@@ -147,8 +163,8 @@ export default function Home() {
               <h2>НИУ МЭИ (СФ)</h2>
               <h3>Факультет компьютерных технологий и электроники</h3>
               <p>2006 — 2012</p>
-              <p>В 2010 присвоена степень бакалавра техники и технологи по направлению &quot;Информатика и вычислительная техника&quot;.</p>
-              <p>В 2012 присвоена степень инженера по спецальности &quot;Вычислительные машины, косплексы, системы и сети&quot;.</p>
+              <p>В 2010 присвоена степень бакалавра техники и технологии по направлению &quot;Информатика и вычислительная техника&quot;.</p>
+              <p>В 2012 присвоена степень инженера по специальности &quot;Вычислительные машины, комплексы, системы и сети&quot;.</p>
             </div>
           </section>
 
